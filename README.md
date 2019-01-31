@@ -1,11 +1,11 @@
 # pygreynoise
 
-Python 3 wrapper for the greynoise API, see https://github.com/Grey-Noise-Intelligence/api.greynoise.io and greynoise.io.
+Python 3 wrapper for the greynoise API v1, see https://github.com/Grey-Noise-Intelligence/api.greynoise.io and greynoise.io. API V1 is nor deprecated but still working, see [this project](https://github.com/GreyNoise-Intelligence/pygreynoise) for the API V2
 
-To install:
+To install, either use pypi with `pip install pygreynoisev1` or install from sources:
 ```
-git clone https://github.com/Te-k/pygreynoise.git
-cd pygreynoise
+git clone https://github.com/Te-k/pygreynoisev1.git
+cd pygreynoisev1
 pip install -r requirements.txt
 pip install .
 ```
@@ -13,7 +13,7 @@ pip install .
 ## CLI
 
 ```
-$ greynoise -h
+$ greynoisev1 -h
 usage: greynoise [-h] {ip,list,tag,config} ...
 
 Request GreyNoise
@@ -32,7 +32,7 @@ optional arguments:
 ## Library
 
 ```python
-from pygreynoise import GreyNoise
+from pygreynoisev1 import GreyNoise
 
 gn = GreyNoise()
 tags = gn.tags()
@@ -50,4 +50,4 @@ except GreyNoiseError:
 
 ## Author and license
 
-Pygreynoise was started by [Tek](https://github.com/Te-k) and is published under MIT license. Feel free to open issues and pull requests.
+Pygreynoisev1 was started by [Tek](https://github.com/Te-k) and is published under MIT license. Feel free to open issues and pull requests.
